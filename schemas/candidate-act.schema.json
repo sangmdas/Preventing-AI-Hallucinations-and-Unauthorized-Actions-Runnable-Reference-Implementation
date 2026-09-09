@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/candidate-act.schema.json",
+  "title": "CandidateAct",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["actId", "outputHash", "originatingSystemId", "modelId", "workflowId", "intendedRecipient", "intendedTool", "intendedSinkId", "purpose", "jurisdiction", "dataClass", "riskClass", "requestedConsequence", "timestamp", "alfId", "status"],
+  "properties": {
+    "actId": {"type": "string", "minLength": 1},
+    "outputHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "originatingSystemId": {"type": "string", "minLength": 1},
+    "modelId": {"type": "string", "minLength": 1},
+    "workflowId": {"type": "string", "minLength": 1},
+    "intendedRecipient": {"type": "string", "minLength": 1},
+    "intendedTool": {"type": "string", "minLength": 1},
+    "intendedSinkId": {"type": "string", "minLength": 1},
+    "purpose": {"type": "string", "minLength": 1},
+    "jurisdiction": {"type": "string", "minLength": 1},
+    "dataClass": {"type": "string", "minLength": 1},
+    "riskClass": {"enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"]},
+    "requestedConsequence": {"type": "string", "minLength": 1},
+    "timestamp": {"type": "string", "format": "date-time"},
+    "alfId": {"type": "string", "minLength": 1},
+    "status": {"const": "non-effective"}
+  }
+}

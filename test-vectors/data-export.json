@@ -1,0 +1,7 @@
+{
+  "profile": "DAS-CANDIDATE-FINALITY-REF-1",
+  "object": {"alfId":"alf-approved-3","dataClass":"INTERNAL","intendedRecipient":"recipient-9","intendedSinkId":"export-gateway","intendedTool":"data.export","jurisdiction":"IN","modelId":"model-approved-7","originatingSystemId":"agent-runtime-1","outputHash":"2ad678e52537c5eeb8cc582823a098c4039811537677fdb13dbd40b5da60de06","purpose":"approved-purpose","requestedConsequence":"DATA_EXPORT","riskClass":"MEDIUM","workflowId":"workflow-42"},
+  "expected_canonical_utf8": "{\"alfId\":\"alf-approved-3\",\"dataClass\":\"INTERNAL\",\"intendedRecipient\":\"recipient-9\",\"intendedSinkId\":\"export-gateway\",\"intendedTool\":\"data.export\",\"jurisdiction\":\"IN\",\"modelId\":\"model-approved-7\",\"originatingSystemId\":\"agent-runtime-1\",\"outputHash\":\"2ad678e52537c5eeb8cc582823a098c4039811537677fdb13dbd40b5da60de06\",\"purpose\":\"approved-purpose\",\"requestedConsequence\":\"DATA_EXPORT\",\"riskClass\":\"MEDIUM\",\"workflowId\":\"workflow-42\"}",
+  "expected_sha256_hex": "8eb9f70afda881dc08add0deb9add38965cc9ec258c1c0acec7ee762296213ed"
+}
+

@@ -1,0 +1,7 @@
+{
+  "profile": "DAS-CANDIDATE-FINALITY-REF-1",
+  "object": {"alfId":"alf-approved-3","dataClass":"INTERNAL","intendedRecipient":"recipient-9","intendedSinkId":"payment-api","intendedTool":"tools.payment.create","jurisdiction":"IN","modelId":"model-approved-7","originatingSystemId":"agent-runtime-1","outputHash":"735b111a4f190d1ac9e446b710582912dfb331eecc479fd8be50e9360baa3d15","purpose":"approved-purpose","requestedConsequence":"TOOL_CALL","riskClass":"MEDIUM","workflowId":"workflow-42"},
+  "expected_canonical_utf8": "{\"alfId\":\"alf-approved-3\",\"dataClass\":\"INTERNAL\",\"intendedRecipient\":\"recipient-9\",\"intendedSinkId\":\"payment-api\",\"intendedTool\":\"tools.payment.create\",\"jurisdiction\":\"IN\",\"modelId\":\"model-approved-7\",\"originatingSystemId\":\"agent-runtime-1\",\"outputHash\":\"735b111a4f190d1ac9e446b710582912dfb331eecc479fd8be50e9360baa3d15\",\"purpose\":\"approved-purpose\",\"requestedConsequence\":\"TOOL_CALL\",\"riskClass\":\"MEDIUM\",\"workflowId\":\"workflow-42\"}",
+  "expected_sha256_hex": "481ed7d7bd5249a617bb419bd98766cc663c9da5362047f602f8554ca2a42564"
+}
+

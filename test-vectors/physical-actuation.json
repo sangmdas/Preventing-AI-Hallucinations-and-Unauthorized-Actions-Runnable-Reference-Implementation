@@ -1,0 +1,7 @@
+{
+  "profile": "DAS-CANDIDATE-FINALITY-REF-1",
+  "object": {"alfId":"alf-approved-3","dataClass":"INTERNAL","intendedRecipient":"recipient-9","intendedSinkId":"actuator-controller","intendedTool":"robot.actuate","jurisdiction":"IN","modelId":"model-approved-7","originatingSystemId":"agent-runtime-1","outputHash":"77655b621e3078688a4e27d4f3dc1c32d51580e895ccac00c048b0b151c0aa27","purpose":"approved-purpose","requestedConsequence":"PHYSICAL_ACTUATION","riskClass":"MEDIUM","workflowId":"workflow-42"},
+  "expected_canonical_utf8": "{\"alfId\":\"alf-approved-3\",\"dataClass\":\"INTERNAL\",\"intendedRecipient\":\"recipient-9\",\"intendedSinkId\":\"actuator-controller\",\"intendedTool\":\"robot.actuate\",\"jurisdiction\":\"IN\",\"modelId\":\"model-approved-7\",\"originatingSystemId\":\"agent-runtime-1\",\"outputHash\":\"77655b621e3078688a4e27d4f3dc1c32d51580e895ccac00c048b0b151c0aa27\",\"purpose\":\"approved-purpose\",\"requestedConsequence\":\"PHYSICAL_ACTUATION\",\"riskClass\":\"MEDIUM\",\"workflowId\":\"workflow-42\"}",
+  "expected_sha256_hex": "a4a8da4ef7807676342d43297eb0d8157ff83301a96f99eedba6988063057a7f"
+}
+

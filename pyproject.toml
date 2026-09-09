@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "candidate-act-finality-reference"
+version = "0.1.0"
+description = "Runnable cross-domain reference implementation of DAS Protocols Candidate-Act Finality"
+requires-python = ">=3.10"
+authors = [{name = "Sangam Kumar Das"}]
+license = "CC-BY-NC-4.0"
+license-files = ["LICENSE.md"]
+readme = "README.md"
+keywords = ["ai-safety", "authorization", "execution-finality", "policy-enforcement"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Operating System :: OS Independent"
+]
+
+[project.scripts]
+candidate-finality-demo = "candidate_finality.demo:main"
+candidate-finality-benchmark = "candidate_finality.benchmark:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

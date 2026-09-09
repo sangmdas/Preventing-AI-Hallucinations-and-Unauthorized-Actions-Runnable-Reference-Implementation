@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/execution-handle.schema.json",
+  "title": "ExecutionHandle",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["handleId", "actId", "hcadDigest", "validationReceiptDigest", "sinkId", "hardwareBoundSinkId", "permittedRecipient", "permittedPurpose", "permittedJurisdiction", "permittedDataClass", "permittedConsequenceType", "rcaeDigest", "policyEpoch", "revocationEpoch", "nonce", "issuedAt", "expiresAt", "oneTimeUse", "executionMaterialHint", "protector"],
+  "properties": {
+    "handleId": {"type": "string", "minLength": 1},
+    "actId": {"type": "string", "minLength": 1},
+    "hcadDigest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "validationReceiptDigest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "sinkId": {"type": "string", "minLength": 1},
+    "hardwareBoundSinkId": {"type": "string", "minLength": 1},
+    "permittedRecipient": {"type": "string", "minLength": 1},
+    "permittedPurpose": {"type": "string", "minLength": 1},
+    "permittedJurisdiction": {"type": "string", "minLength": 1},
+    "permittedDataClass": {"type": "string", "minLength": 1},
+    "permittedConsequenceType": {"type": "string", "minLength": 1},
+    "rcaeDigest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "policyEpoch": {"type": "integer", "minimum": 0},
+    "revocationEpoch": {"type": "integer", "minimum": 0},
+    "nonce": {"type": "string", "minLength": 1},
+    "issuedAt": {"type": "string", "format": "date-time"},
+    "expiresAt": {"type": "string", "format": "date-time"},
+    "oneTimeUse": {"const": true},
+    "executionMaterialHint": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "protector": {
+      "type": "object",
+      "required": ["type", "keyId", "signature"],
+      "properties": {
+        "type": {"const": "HMAC-SHA-256-REFERENCE"},
+        "keyId": {"type": "string", "minLength": 1},
+        "signature": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    }
+  }
+}
